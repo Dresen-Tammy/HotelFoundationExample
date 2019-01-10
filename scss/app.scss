@@ -1,55 +1,104 @@
 @charset 'utf-8';
-
+//
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
-@include foundation-global-styles;
+@include foundation-global-styles; //needed
 //@include foundation-grid;
-// @include foundation-flex-grid;
-@include foundation-xy-grid-classes;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
+@include foundation-flex-grid; //needed
+@include foundation-typography; //needed
+@include foundation-button;  //needed
+@include foundation-forms; //needed for forms
+//@include foundation-range-input;
+//@include foundation-accordion;
+//@include foundation-accordion-menu;
+//@include foundation-breadcrumbs;
+//@include foundation-button-group;
+//@include foundation-callout;
+//@include foundation-card;
+//@include foundation-close-button;
+@include foundation-menu; //needed
+@include foundation-menu-icon; //needed
 @include foundation-drilldown-menu;
 @include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-// @include foundation-progress-element;
-// @include foundation-progress-element;
-// @include foundation-meter-element;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
-@include foundation-visibility-classes;
-// @include foundation-float-classes;
-@include foundation-flex-classes;
+//@include foundation-dropdown-menu;
+//@include foundation-responsive-embed;
+//@include foundation-label;
+//@include foundation-media-object;
+//@include foundation-off-canvas;
+//@include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-progress-element;
+//@include foundation-meter-element;
+//@include foundation-slider;
+@include foundation-sticky; //needed
+@include foundation-reveal; //needed
+//@include foundation-switch;
+//@include foundation-table;
+//@include foundation-tabs;
+@include foundation-thumbnail; //needed
+@include foundation-title-bar; //needed
+//@include foundation-tooltip;
+@include foundation-top-bar; //needed
+@include foundation-visibility-classes; //needed
+//@include foundation-float-classes;
+@include foundation-flex-classes; //needed
 
-// @include foundation-prototype-classes;
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+
+body, html, main {
+  /* important */
+  height: 100%; }
+
+.fixed-img {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.fixed-img.img-1 {
+  background-image: url("../images/cabinFirstImageedit.jpg"); }
+
+.fixed-img.img-2 {
+  background-image: url("../images/foodSecond.jpg"); }
+
+.fixed-img.img-3 {
+  background-image: url("../images/galleryThird.jpg"); }
+
+.fixed-img.img-4 {
+  background-image: url("../images/contactFourth.jpg"); }
+
+.fixed-img.img-5 {
+  background-image: url("../images/pricingAvailFifth.jpg"); }
+
+.scrolling-bg {
+  min-height: 100%; }
+
+  .color-1 {
+    background-color: $primary-color;
+  }
+  .color-2 {
+    background-color: $secondary-color;
+  }
+  .color-3 {
+    background-color: $success-color;
+  }
+.sticky {
+width: 100%;
+}
+.hero{
+ padding-top: 250px;
+}
+.is-stuck{
+   position:fixed;
+    z-index:5;
+    width:100%;
+
+}
